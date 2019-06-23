@@ -7,11 +7,28 @@
 //
 
 #import "BWAppDelegate.h"
+#import "Person.h"
 
 @implementation BWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Person setTribe:@"Khans"];
+    [[Person shared] speak];
+    
+    /*
+    Person *p = [[Person alloc] init];
+    [p setAge:200];
+    [p whatsYourAge];
+    [Person setTribe:@"Khans"];
+    [p speak];
+    */
+    
+    
+
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

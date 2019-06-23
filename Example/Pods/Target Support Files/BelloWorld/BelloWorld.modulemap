@@ -1,0 +1,6 @@
+framework module BelloWorld {
+  umbrella header "BelloWorld-umbrella.h"
+
+  export *
+  module * { export * }
+}

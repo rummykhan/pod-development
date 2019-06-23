@@ -1,0 +1,16 @@
+PODS:
+  - BelloWorld (0.1.0)
+
+DEPENDENCIES:
+  - BelloWorld (from `../`)
+
+EXTERNAL SOURCES:
+  BelloWorld:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BelloWorld: 3ed8a6b0c7521e6cae87fb699486044fb2bc9466
+
+PODFILE CHECKSUM: af0f8f9339271ec246e5f257a3eb5b993d189b21
+
+COCOAPODS: 1.6.1

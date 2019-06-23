@@ -1,0 +1,6 @@
+framework module Pods_BelloWorld_Example {
+  umbrella header "Pods-BelloWorld_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

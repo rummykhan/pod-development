@@ -7,6 +7,7 @@
 //
 
 #import "BWViewController.h"
+#import <BelloWorld/Bello.h>
 
 @interface BWViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    Bello* bello = [[Bello alloc] init];
+    [Bello belloWorld];
+    NSLog(@"%@", [bello jelloWorld]);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

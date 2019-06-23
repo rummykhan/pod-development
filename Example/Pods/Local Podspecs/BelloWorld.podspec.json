@@ -1,0 +1,22 @@
+{
+  "name": "BelloWorld",
+  "version": "0.1.0",
+  "summary": "A short description of BelloWorld.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rummykhan/BelloWorld",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rummykhan": "rehan_manzoor@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/rummykhan/BelloWorld.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BelloWorld/Classes/**/*"
+}

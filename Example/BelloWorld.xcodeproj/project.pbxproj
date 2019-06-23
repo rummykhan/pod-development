@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D487E8B8E58DDF936B5FC431 /* Pods_BelloWorld_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B647CD048B9BCF18F38AA71 /* Pods_BelloWorld_Example.framework */; };
+		FCAEE61322BD9955001EFD0D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEE61222BD9955001EFD0D /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +65,11 @@
 		6B647CD048B9BCF18F38AA71 /* Pods_BelloWorld_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BelloWorld_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CF0294EAD915DC53B0642A9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D35E369163652B98DB2B9914 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D6D93AAF898C9A47A626E7B4 /* BelloWorld.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BelloWorld.podspec; path = ../BelloWorld.podspec; sourceTree = "<group>"; };
+		CF0294EAD915DC53B0642A9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D35E369163652B98DB2B9914 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6D93AAF898C9A47A626E7B4 /* BelloWorld.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BelloWorld.podspec; path = ../BelloWorld.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FCAEE61122BD98E7001EFD0D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FCAEE61222BD9955001EFD0D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 		6003F593195388D20070C39A /* Example for BelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				FCAEE61022BD98C9001EFD0D /* Rehan */,
 				6003F59C195388D20070C39A /* BWAppDelegate.h */,
 				6003F59D195388D20070C39A /* BWAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,8 +197,16 @@
 				0EF78B47C05E219256AD6363 /* Pods-BelloWorld_Tests.debug.xcconfig */,
 				69047A2FEF5B889CD2F13388 /* Pods-BelloWorld_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCAEE61022BD98C9001EFD0D /* Rehan */ = {
+			isa = PBXGroup;
+			children = (
+				FCAEE61122BD98E7001EFD0D /* Person.h */,
+				FCAEE61222BD9955001EFD0D /* Person.m */,
+			);
+			name = Rehan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +260,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = rummykhan;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = A74ZZST5M3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +273,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -370,6 +386,7 @@
 			files = (
 				6003F59E195388D20070C39A /* BWAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* BWViewController.m in Sources */,
+				FCAEE61322BD9955001EFD0D /* Person.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +515,7 @@
 			baseConfigurationReference = 43E591419A86BDD39FD9C15F /* Pods-BelloWorld_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A74ZZST5M3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BelloWorld/BelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "BelloWorld/BelloWorld-Info.plist";
@@ -513,6 +531,7 @@
 			baseConfigurationReference = 49949992344B61CE384E4D6E /* Pods-BelloWorld_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A74ZZST5M3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BelloWorld/BelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "BelloWorld/BelloWorld-Info.plist";
